@@ -28,12 +28,11 @@ body{
     color: whitesmoke;
     position: absolute;
     width: 100%;
+    padding: 180px;
     margin: 0 auto 0 auto;
     font-family: 'Lato', sans-serif;
-    line-height: 280px;
     text-align: center;
     text-transform: uppercase;
-    text-rendering: optimizeLegibility;
 }
 
 
@@ -163,6 +162,11 @@ body{
         font-size: 1.0em;
        
     }
+
+    .header-holder .header-title{
+        top: 250px;
+        padding: 30px;
+     }
       
 }
 
@@ -179,7 +183,7 @@ body{
 
     .header-holder .header-title{
        top: 250px;
-        line-height: 0px;
+       padding: 30px;
     }
 
    

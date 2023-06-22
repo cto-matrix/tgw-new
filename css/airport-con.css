@@ -628,8 +628,8 @@
         
         margin: 1em auto;
         width: 6em;
-        height: 3em;
-        font: 1em/3.21em sans-serif;
+        height: 6em;
+        font: 2em/3.21em sans-serif;
        
       }
       
@@ -670,9 +670,9 @@
      .service-btn {
         
         margin: 1em auto;
-        width: 5em;
+        width: 6em;
         height: 3em;
-        font: 1em/3.21em sans-serif;
+        font: 2em/3.21em sans-serif;
        
       }
    

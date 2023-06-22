@@ -1,11 +1,11 @@
 
 body{
     width: 100%;
-    color: #eca60f;
     background-color: #eca60f;
 }
 .header-holder{
     padding: 0px; 
+    background-color: #eca60f;
 }
 
 .header-holder .header-img{

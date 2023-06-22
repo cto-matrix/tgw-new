@@ -1,8 +1,8 @@
-@font-face { font-family: heavy_dock11; src: url('../font/heavy_dock11.otf'); }
-body{
-    width: 100%;
-    background-color: #eca60f;
-}
+
+
+
+
+
 .header-holder{
     padding: 0px; 
     background-color: #eca60f;
@@ -405,7 +405,7 @@ body{
 
   
  
-  .service-btn span[aria-hidden=true]:after, button span {
+  .service-btn span[aria-hidden=true]:after, .service-btn span {
     position: absolute;
     top: 0;
     right: 0;
@@ -473,11 +473,7 @@ body{
     --hue: 187 ;
   }
   
-  @media (max-width: 800px) {
-    html {
-      font-size: 2vw;
-    }
-  }
+
 
   
   /*	
@@ -610,7 +606,7 @@ body{
     .header-holder .header-title{
         top: 250px;
         padding: 20px;
-        font-size: 2.5em;
+        font-size: 3.0em;
        padding: 40px;
      }
 
@@ -643,7 +639,7 @@ body{
 
     .header-holder .header-title{
        top: 250px;
-       font-size: 2.5em;
+       font-size: 3.0em;
        padding: 40px;
     }
 

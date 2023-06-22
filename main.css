@@ -9,7 +9,6 @@
   body{
     font-family: 'Poppins', sans-serif;
   background-color: var(--veryLightGray);
-  width: 100%;
   }
 
   @font-face { font-family: heavy_dock11; src: url('font/heavy_dock11.otf'); }
@@ -31,19 +30,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
-    
 }
 
 .navbar .navbar-brand{
     font-weight: bolder;
-    font-size: 22px;
-}
-
-.navbar .login-btn{
-  background-color: rgba(0, 0, 0, 0.342);
-  color: whitesmoke; 
-  margin: 8px;
-  margin-top: 8px;
+    font-size: 28px;
 }
 
 .navbar a{

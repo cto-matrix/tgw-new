@@ -1,4 +1,4 @@
-
+@font-face { font-family: heavy_dock11; src: url('../font/heavy_dock11.otf'); }
 body{
     width: 100%;
     background-color: #eca60f;
@@ -390,6 +390,95 @@ body{
   }
   
 
+
+  /* Service Title */
+  
+  #t1{
+    font-size: 60px;
+  }
+
+  #t2{
+    font-size: 60px;
+  }
+
+  /* BUTTON DESIGN */
+
+  
+ 
+  .service-btn span[aria-hidden=true]:after, button span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .service-btn a{
+    color: black;
+    text-decoration-line: none;
+  }
+  .service-btn {
+    --hue: 40;
+    --sat: 100%;
+    --lum: 60%;
+    color: black;
+    display: block;
+    border: none;
+    margin: 1em auto;
+    padding: 0;
+    position: relative;
+    width: 7em;
+    height: 3em;
+    background: none;
+    font: 3em/3.21em advent pro, sans-serif;
+    filter: contrast(0.7);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .service-btn:focus, button:hover {
+    outline: none;
+    filter: none;
+  }
+  .service-btn:active {
+    transform: translateY(0.25rem);
+  }
+  .service-btn:active [aria-hidden=true] {
+    transform: translateY(var(--ty, 0.25rem));
+  }
+  .service-btn:active [aria-hidden=true]:nth-child(2) {
+    --ty: .75rem ;
+  }
+  .service-btn span[aria-hidden=true] {
+    filter: drop-shadow(0.125rem 0.1875rem hsl(var(--hue), calc(var(--sat) - 25%), 25%)) drop-shadow(-0.1875rem -0.125rem hsl(var(--hue), calc(var(--sat) - 41%), calc(var(--lum) + 31%))) drop-shadow(1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.75));
+  }
+  .service-btn span[aria-hidden=true]:after {
+    background: hsl(var(--hue), var(--sat), var(--lum));
+    clip-path: polygon(100% 0, 91% 91%, 13% 100%, 0 35%);
+    content: "";
+  }
+  .service-btn span[aria-hidden=true]:nth-child(2) {
+    --sat: 0%;
+    --lum: 100%;
+  }
+  .service-btn span[aria-hidden=true]:nth-child(2):after {
+    clip-path: polygon(3% 21%, 85% 25%, 75% 93%, 14% 87%);
+  }
+  .service-btn span:last-child {
+    background: radial-gradient(black, white 83%) 50% 0.125em/0.5em 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(2px 2px #313131);
+  }
+  .service-btn:nth-of-type(2) {
+    --hue: 187 ;
+  }
+  
+  @media (max-width: 800px) {
+    html {
+      font-size: 2vw;
+    }
+  }
+
   
   /*	
   ============
@@ -524,6 +613,16 @@ body{
         font-size: 2.5em;
        padding: 40px;
      }
+
+     .rw-1 .title-col-1{
+        margin-right: 30px;
+        margin-left: 30px;
+     }
+
+     .rw-1 .title-col-2{
+        margin-right: 30px;
+        margin-left: 30px;
+     }
       
 }
 
@@ -543,6 +642,17 @@ body{
        font-size: 2.5em;
        padding: 40px;
     }
+
+    /* Title of each service escort and transportation*/
+    .rw-1 .title-col-1{
+        margin-right: 30px;
+        margin-left: 30px;
+     }
+
+     .rw-1 .title-col-2{
+        margin-right: 30px;
+        margin-left: 30px;
+     }
 
    
 }

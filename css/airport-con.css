@@ -623,6 +623,10 @@ body{
         margin-right: 30px;
         margin-left: 30px;
      }
+
+     .rw-1 .lead{
+        font-size: 18px;
+     }
       
 }
 
@@ -654,5 +658,8 @@ body{
         margin-left: 30px;
      }
 
+     .rw-1 .lead{
+        font-size: 18px;
+     }
    
 }

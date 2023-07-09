@@ -58,8 +58,10 @@
     padding: 0px;
     width: 100% !important;
     height: auto !important;
+    position: absolute;
     background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
     background-size: cover;
+    object-fit: cover;
     transition: 1s opacity;
     z-index:-1;
   }
@@ -157,7 +159,8 @@
 
   .game-sec{
     position: relative;
-    background: #eca60f;
+    background: #f8f5f5;
+    padding: 200px;
     color: #FFF;
     text-align: center;
     overflow: hidden;
@@ -191,6 +194,12 @@
     padding-right: 300px;
     padding-left: 300px;
     color: #131212;
+    font-size: 25px;
+  }
+
+  .mission-top-line{
+    width: 50%;
+    margin-top: 30px;
   }
 
 
@@ -306,6 +315,7 @@
     height: 500px;
     width: 100%;
     text-align: center;
+    motion-path: 250px;
     justify-content: center;
     background: linear-gradient(45deg,#ca8d48, #fcd249, #db9b24, #ebe48a, #FFDC18, #FF3706);
     background-size: 600% 100%;
@@ -316,7 +326,8 @@
 
   .visiting-div{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 300px;
+    margin-top: 300px;
   }
   .visiting-div .visiting-text{
     color: #000;
@@ -734,7 +745,7 @@
   --blue: hsl(212, 86%, 64%);
   --varyDarkBlue: hsl(234, 12%, 34%);
   --grayishBlue: hsl(229, 6%, 66%);
-  --veryLightGray: hsl(0, 0%, 98%);
+  --veryLightGray: hsl(0, 15%, 94%);
   --weight1: 200;
   --weight2: 400;
   --weight3: 600;
@@ -746,7 +757,22 @@
   background-color: var(--veryLightGray);
   padding-top: 30px;
   position: relative;
+  padding-bottom: 120px;
   justify-content: center;
+}
+
+.helper-class .header h1{
+  font-size: 65px;
+  font-weight: bolder;
+}
+
+.helper-class .header p{
+  color: rgb(8, 8, 8);
+}
+
+.helper-class img{
+  height: 80px;
+  width: 80px;
 }
 
 .helper-class .attribution { 
@@ -769,6 +795,15 @@
 @media (max-width: 400px) {
   .helper-class h1 {
       font-size: 1.5rem;
+  }
+
+  .helper-class img{
+    height: 50px;
+    width: 50px;
+  }
+  .helper-class .img2{
+    height: 40px;
+    width:40px;
   }
 }
 
@@ -800,6 +835,7 @@
 .helper-class  img {
   float: right;
 }
+
 
 @media (max-width: 450px) {
   .helper-class .box {
@@ -871,8 +907,8 @@
 
 .test-caro {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   height: 100vh;
   background: #444;
 }
@@ -948,7 +984,7 @@
 .test-caro .card__svg {
   position: absolute;
   left: 0;
-  top: 35px;
+  top: 30px;
 }
 
 @keyframes LineFadeIn {
@@ -999,6 +1035,8 @@
 .test-sel {
   padding: 28px;
   justify-content: center;
+  margin-top: 150px;
+  background-color: rgb(247, 246, 246);
 }
 .test-sel h1{
   font-size: 65px;
@@ -1009,6 +1047,9 @@
 
   
 /*Responsive Styles for smaller screens*/
+
+
+
 @media only screen and (max-width: 480px) {
 
     .navbar .nav-content{
@@ -1016,12 +1057,13 @@
         justify-content: center;
     }
     .video-container{
-        height:250px;
+        height:450px;
+        width: 100%;
         margin-top: 0px;
     }
     #video{
         width: 100% !important;
-        height: 350px !important;
+        height: 500px !important;
     }
 
     .game-sec p{
@@ -1033,6 +1075,7 @@
         font-size: 30px;
       }
 
+     
       .slider-content figure{
         width:130px;
         height:90px;
@@ -1041,7 +1084,214 @@
       .contries-to-visit .row {
         height: 1400px;
       }
+
+      .card {
+
+        margin: 3px;
+      }
+
+      .card-text {
+        margin: 15px;
+        transform: translateZ(30px);
+      }
+      .card-text .date {
+        color: rgb(219, 161, 0);
+        font-size:14px;
+      }
+      .card-text p {
+        color: grey;
+        font-size:12px;
+        font-weight: 300;
+      }
+      .card-text h2 {
+        margin-top:0px;
+        font-size:25px;
+        color: black;
+      }
+
+
+      .game-sec{
+        padding: 20px;
+      }
+
+      .game-sec h1{
+        margin-top: 60px;
+        padding: 10px;
+        font-size: 25px;
+        
+      }
+
+      .game-sec p{
+        margin-bottom: 40px;
+      }
+
+      .game-sec .mission-top-line{
+        width: 290px;
+      }
+
+
+
+      .photo-winner{
+        height: 500px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .photo-winner .pic-title-wrapper h1{
+            font-size: 29px;
+      }
+
+      .photo-winner h4{
+        font-size: 19px;
+      }
+    
+    
+      .slideshow{
+        height: 400px;
+        width: 100%;
+      }
+      .content{
+        margin: auto;
+        width: 50px;
+      }
+      .slider-content{
+        width: 40%;
+      }
+
+      .slider-content figure{
+        width:100px;
+        height:70px;
+      }
+
+
+      .visiting-div{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: rgb(228, 227, 227);
+      }
+      .visiting-div .visiting-text{
+        font-size: 30px;
+      }
+      .visiting-div .visiting-text2{
+        font-size: 20px;
+      }
+
+
+
+      .contries-to-visit section {
+        position: relative;
+        display: flex;
+      }
+      .contries-to-visit .row {
+        align-items: center;
+        padding: 20px;
+        height: 50vh;
+      }
       
+      .contries-to-visit .row .card {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        margin: 10px 0;
+        
+        transition: ease all 2.3s;
+        perspective: 1200px;
+      }
+
+      #price{
+        display: none;
+      }
+
+
+      .test-sel {
+        padding: 18px;
+        margin-top: 650px;
+      }
+      .test-sel h1{
+        font-size: 35px;
+      }
+
+
+      
+
+
+      
+      .test-caro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #444;
+      }
+      
+      .test-caro .card {
+        position: relative;
+        background: #333;
+        width: 300px;
+        height: 600px;
+        border-radius: 6px;
+        padding: 2rem;
+        color: #aaa;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      
+      
+      .test-caro .card__image {
+        opacity: 0;
+        width: 55%;
+        height: 180px;
+        animation: ImageFadeIn 0.8s 1.4s forwards;
+      }
+      
+      .test-caro .card__image img {
+        
+      }
+      .test-caro .card .card__title {
+        color: white;
+        margin-top: 3px;
+        font-size: 20px;
+        font-weight: bolder;
+        letter-spacing: 0.01em;
+      }
+      
+      .test-caro .card .service-title{
+        color: rgb(230, 98, 22);
+        font-weight: bold;
+      }
+      
+      .test-caro .card .test-service{
+        color: rgb(248, 192, 38);
+      }
+      
+      .test-caro .card .date-title{
+        color: rgb(230, 98, 22);
+        font-weight: bold;
+      }
+      
+      .test-caro .card .test-date{
+        color: rgb(248, 192, 38);
+      }
+      
+      .test-caro .card .star-title{
+        color: rgb(230, 98, 22);
+        font-weight: bold;
+      }
+      
+      .test-caro .card .checked {
+        color: orange;
+      }
+      
+      .test-caro .card__content {
+        margin-top: -1rem;
+        opacity: 0;
+        animation: ContentFadeIn 0.8s 1.6s forwards;
+      }
+      .test-caro .card__svg {
+        position: absolute;
+        left: 0;
+        top: 35px;
+      }
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
@@ -1070,6 +1320,14 @@
         font-size: 30px;
       }
 
+      .game-sec p{
+        font-size: 22px;
+      }
+
+      .mission-top-line{
+        width: 50px;
+      }
+
       .slider-content figure{
         width:130px;
         height:90px;
@@ -1078,4 +1336,19 @@
       .contries-to-visit .row {
         height: 1400px;
       }
+}
+
+
+@media (min-aspect-ratio:16/9){
+  .home-vid{
+    width: 100%;
+    height: auto;
+}
+}
+
+@media (max-aspect-ratio:16/9){
+ .home-vid{
+    width: auto;
+    height: 100%;
+}
 }

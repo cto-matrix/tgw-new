@@ -67,6 +67,11 @@
   }
 
 
+  .company-meaning-title .row .gateway-card{
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   @-webkit-keyframes scroll {
     0% {
